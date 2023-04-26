@@ -19,10 +19,11 @@ body {
 }
 
 header {
+  position: fixed;
   width: 100%;
   padding: 0 auto;
   height: 96px;
-  border-bottom: 1px solid rgb(173, 173, 173);
+  border-bottom: 1px solid rgb(75, 75, 75);
 }
 
 nav,
@@ -56,17 +57,49 @@ ul > li:first-child {
   margin: 0;
 }
 
+li:hover {
+  color: #fff;
+}
+
 .icon > a > img {
   width: 16px;
 }
 
 .headerTitle {
   height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerTitle > h3 {
+  font-size: 21px;
+}
+
+.employ {
+  margin-top: -1px;
+  background-color: #0071e3;
+  color: #fdfdfd;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  background: #0071e3;
+  color: #fff;
+  border-radius: 980px;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: none;
 }
 
 .main {
   width: 1000px;
-  border: 1px solid red;
-  height: 100%;
+  height: 3000px;
   margin: auto;
 }
