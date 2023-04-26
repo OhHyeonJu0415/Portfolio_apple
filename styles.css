@@ -24,6 +24,7 @@ header {
   padding: 0 auto;
   height: 96px;
   border-bottom: 1px solid rgb(75, 75, 75);
+  background-color: black;
 }
 
 nav,
@@ -74,6 +75,7 @@ li:hover {
 
 .headerTitle > h3 {
   font-size: 21px;
+  margin-top: -1px;
 }
 
 .employ {
@@ -90,11 +92,8 @@ li:hover {
   font-size: 12px;
   line-height: 1.33337;
   font-weight: 400;
-  letter-spacing: -0.02em;
-  padding-left: 11px;
-  padding-right: 11px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  letter-spacing: -0.05em;
+  padding: 5px 11px 4px 11px;
   border: none;
 }
 
@@ -102,4 +101,61 @@ li:hover {
   width: 1000px;
   height: 3000px;
   margin: auto;
+  padding-top: 141px;
+}
+
+.about {
+  width: 1000px;
+}
+
+.aboutTop,
+.aboutBottom {
+  width: 100%;
+  height: fit-content;
+}
+
+.aboutTop > h2 {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 600;
+  color: #fbfbfb;
+}
+
+.aboutPic {
+  margin-top: 92px;
+  height: 562px;
+  background-color: azure;
+}
+
+.aboutBottom {
+  padding-top: 84px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.aboutBottom > h2 {
+  font-size: 32px;
+  color: #cecece;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+}
+
+.aboutBottom > p {
+  line-height: 1.5;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.012em;
+  color: #86868b;
+  margin-top: 15px;
+}
+
+.aboutEmploy {
+  margin-top: 36px;
+  margin-bottom: 16px;
+  /* letter-spacing: 0em; */
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 600;
+  padding: 10px 16px 8px 16px;
 }
