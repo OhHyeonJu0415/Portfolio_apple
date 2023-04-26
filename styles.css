@@ -11,7 +11,7 @@
 
 body {
   font-family: "Noto Sans KR";
-  background-color: black;
+  background-color: #161617;
   color: #fff;
   width: 100%;
   height: 100%;
@@ -98,14 +98,12 @@ li:hover {
 }
 
 .main {
-  width: 1000px;
-  /* height: 3000px; */
-  margin: auto;
-  padding-top: 141px;
+  width: 100%;
+  padding-top: 96px;
 }
 
 .about {
-  width: 1000px;
+  background-color: black;
 }
 
 .aboutTop,
@@ -114,7 +112,13 @@ li:hover {
   height: fit-content;
 }
 
+.aboutTop {
+  padding-top: 45px;
+}
+
 .aboutTop > h2 {
+  text-align: center;
+  /* margin: 0 auto; */
   font-size: 72px;
   line-height: 1;
   font-weight: 600;
@@ -122,12 +126,17 @@ li:hover {
 }
 
 .aboutPic {
+  margin: auto;
   margin-top: 92px;
+  width: 770px;
   height: 562px;
   background-color: azure;
 }
 
 .aboutBottom {
+  /* width: 1000px; */
+  /* margin: auto; */
+  background-color: #161617;
   padding-top: 84px;
   padding-bottom: 10px;
   text-align: center;
@@ -139,6 +148,7 @@ li:hover {
   line-height: 1.2;
   font-weight: 600;
   letter-spacing: 0.004em;
+  margin: auto;
 }
 
 .aboutBottom > p {
