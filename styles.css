@@ -310,14 +310,55 @@ li:hover {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: 200px; */
 }
 
 .mail,
-.git {
+.notion {
   height: 195px;
   padding-top: 56px;
   padding-bottom: 56px;
+  font-size: 13px;
+}
+
+.mail > figure,
+.notion > figure {
+  width: 100%;
+  height: 56px;
+  background-size: 100% 56px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/ac/globalfooter/8/ko_KR/assets/ac-buystrip/help/icon_dark_large.svg);
+  margin: 0 auto;
+  color: #86868b;
+}
+
+.notion > figure {
+  background-image: url(https://www.apple.com/ac/globalfooter/8/ko_KR/assets/ac-buystrip/engraving/icon_large.svg);
+}
+
+.mail > h3,
+.notion > h3 {
+  line-height: 1.3;
+  font-size: 18px;
+  letter-spacing: 0.012em;
+  margin-top: 10px;
+}
+
+.mail > p,
+.notion > p {
+  margin-top: 6px;
+}
+
+.mail > a,
+.notion > a {
+  margin: auto;
+  width: fit-content;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2997ff;
+  margin-top: 11px;
+  text-decoration: none;
 }
 
 footer {
