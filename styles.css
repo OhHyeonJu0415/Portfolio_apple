@@ -388,14 +388,14 @@ li:hover {
   bottom: 90px;
   left: 25%;
   transform: translate(-50%, 0);
-  background-image: url(/images/HTML.png);
+  background-image: url(./images/HTML.png);
 }
 
 .CSSFigure {
   bottom: -20px;
   left: 25%;
   transform: translate(-50%, 0);
-  background-image: url(/images/CSS.png);
+  background-image: url(./images/CSS.png);
 }
 
 .JSFigure {
@@ -403,21 +403,21 @@ li:hover {
   bottom: 120px;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-image: url(/images/마스크\ 그룹\ 1.png);
+  background-image: url(./images/마스크\ 그룹\ 1.png);
 }
 
 .RFigure {
   bottom: 90px;
   left: 75%;
   transform: translate(-50%, 0);
-  background-image: url(/images/React.png);
+  background-image: url(./images/React.png);
 }
 
 .RNFigure {
   bottom: -20px;
   left: 75%;
   transform: translate(-50%, 0);
-  background-image: url(/images/RN.png);
+  background-image: url(./images/RN.png);
 }
 
 .finish {
