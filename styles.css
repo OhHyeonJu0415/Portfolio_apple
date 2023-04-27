@@ -158,6 +158,18 @@ li:hover {
   right: -180px;
   bottom: -60px;
   width: 120%;
+  animation: moveUp 4s forwards;
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    bottom: -200px;
+  }
+  to {
+    opacity: 1;
+    bottom: -60px;
+  }
 }
 
 .aboutBottom {
