@@ -19,6 +19,7 @@ body {
 }
 
 header {
+  z-index: 9999;
   position: fixed;
   width: 100%;
   padding: 0 auto;
@@ -118,7 +119,6 @@ li:hover {
 
 .aboutTop > h2 {
   text-align: center;
-  /* margin: 0 auto; */
   font-size: 72px;
   line-height: 1;
   font-weight: 600;
@@ -134,8 +134,6 @@ li:hover {
 }
 
 .aboutBottom {
-  /* width: 1000px; */
-  /* margin: auto; */
   background-color: #161617;
   padding-top: 84px;
   padding-bottom: 10px;
@@ -163,9 +161,92 @@ li:hover {
 .aboutEmploy {
   margin-top: 36px;
   margin-bottom: 16px;
-  /* letter-spacing: 0em; */
   font-size: 17px;
   line-height: 1.2;
   font-weight: 600;
   padding: 10px 16px 8px 16px;
+}
+
+.project {
+  margin: 74px auto 180px auto;
+  width: 1000px;
+  height: fit-content;
+}
+
+.personalProject,
+.Cooperation {
+  display: grid;
+  width: 100%;
+  height: fit-content;
+  row-gap: 24px;
+  column-gap: 20px;
+}
+
+.personalProject {
+  grid-template: "a b" 320px "a c" 320px / 3fr 1.8fr;
+}
+
+.travel,
+.fm,
+.toy,
+.doling,
+.yoohoo {
+  border-radius: 26px;
+  background-color: black;
+  position: relative;
+}
+
+.travel {
+  grid-area: a;
+}
+
+.fm {
+  grid-area: b;
+}
+
+.toy {
+  grid-area: c;
+}
+
+.Cooperation {
+  margin-top: 24px;
+  grid-template: "d e" 320px "d e" 320px / 2fr 3fr;
+}
+
+.doling {
+  grid-area: d;
+}
+
+.yoohoo {
+  grid-area: e;
+}
+
+.grad {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  bottom: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
