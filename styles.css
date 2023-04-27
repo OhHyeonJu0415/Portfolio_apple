@@ -191,7 +191,7 @@ li:hover {
 .toy,
 .doling,
 .yoohoo {
-  border-radius: 26px;
+  border-radius: 25px;
   background-color: black;
   position: relative;
 }
@@ -249,4 +249,89 @@ li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.skills {
+  width: 1000px;
+  height: fit-content;
+  margin: auto;
+}
+
+.skills > h2 {
+  color: #cecece;
+  line-height: 1.2;
+  font-size: 52px;
+}
+
+.skillGrid {
+  width: 100%;
+  height: fit-content;
+  margin-top: 90px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  display: grid;
+  color: #f5f5f7;
+  font-size: 17px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  /* border-radius: 25px; */
+}
+
+.design,
+.database,
+.develop {
+  grid-column: span 4;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 1.6;
+  height: 512px;
+  background-color: #000000;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.skillsTitle {
+  /* width: 100%; */
+  height: 272px;
+  padding: 58px 30px 30px;
+}
+
+.finish {
+  margin: auto;
+  margin-top: 136px;
+  margin-bottom: 17px;
+  width: 1000px;
+  border-bottom: 1px solid rgb(75, 75, 75);
+  border-top: 1px solid rgb(75, 75, 75);
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 200px; */
+}
+
+.mail,
+.git {
+  height: 195px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+footer {
+  width: 1000px;
+  height: fit-content;
+  margin: auto;
+  padding-top: 12px;
+  padding-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #d2d2d2;
+}
+
+footer > span:first-child {
+  color: #86868b;
 }
