@@ -1047,9 +1047,7 @@ footer > div > span:first-child {
 .base {
   filter: drop-shadow(1px 1px 15px #2d2d2d);
   position: absolute;
-  /* left: 50%; */
   top: 40%;
-  /* transform: translate(-50%, -50%); */
   width: 70%;
   height: 360px;
   background-size: 70% 360px;
@@ -1081,7 +1079,6 @@ footer > div > span:first-child {
 }
 
 .base > img {
-  /* width: 100px; */
   left: calc(50% - 104px);
   top: calc(50% - 6px);
   transform: translate(-50%, -50%);
@@ -1108,10 +1105,70 @@ footer > div > span:first-child {
 }
 
 .codepen > img {
-  /* position: absolute; */
   width: 50px;
-  /* height: 10px; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(0, -50%); */
+}
+
+/* doling part */
+.DolingIntro {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  width: 75%;
+  height: 360px;
+  background-size: 75% 360px;
+  background-repeat: no-repeat;
+  background-image: url(./images/doling/part1.png);
+}
+
+.dolingTitle-top {
+  text-align: right;
+  top: 35%;
+}
+
+.DolingPart2 {
+  filter: brightness(90%);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 16%;
+  width: 42%;
+  height: 370px;
+  background-size: 42% 370px;
+  background-repeat: no-repeat;
+  background-image: url(./images/doling/part2.png);
+}
+
+.DolingPart3 {
+  position: absolute;
+  top: 25%;
+  right: 28px;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-image: url(./images/doling/part3.png);
+}
+
+.introSubTitle-doling {
+  left: 40%;
+  position: absolute;
+  width: fit-content;
+  top: 40%;
+  transform: translate(0, -50%);
+}
+
+.introSubTitle2-doling {
+  left: 40%;
+  position: absolute;
+  width: fit-content;
+  top: 60%;
+  transform: translate(0, -50%);
+}
+
+.introSubTitle3-doling {
+  right: 0;
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  transform: translate(0, -50%);
 }
