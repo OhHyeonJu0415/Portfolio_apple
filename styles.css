@@ -425,7 +425,6 @@ li:hover {
 .finish {
   margin: auto;
   margin-top: 136px;
-  margin-bottom: 17px;
   width: 1000px;
   border-bottom: 1px solid rgb(75, 75, 75);
   border-top: 1px solid rgb(75, 75, 75);
@@ -488,7 +487,7 @@ li:hover {
 footer {
   width: 100%;
   height: fit-content;
-  padding-top: 12px;
+  padding-top: 29px;
   padding-bottom: 21px;
   background-color: #161617;
 }
