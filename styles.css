@@ -263,20 +263,20 @@ li:hover {
 }
 
 .travel-cover {
-  filter: brightness(90%);
+  filter: brightness(80%);
   position: absolute;
   top: 100px;
   left: 0;
-  width: 110%;
+  width: 111%;
   height: 550px;
-  background-size: 110% 550px;
+  background-size: 111% 550px;
   background-repeat: no-repeat;
   background-image: url(./images/travel/Cover_travel.png);
   margin: 0 auto;
 }
 
 .fm-cover {
-  filter: brightness(95%);
+  filter: brightness(75%);
   position: absolute;
   top: 40px;
   right: -30%;
@@ -289,9 +289,9 @@ li:hover {
 }
 
 .toy-cover {
-  filter: brightness(110%);
+  filter: brightness(90%);
   position: absolute;
-  bottom: -60px;
+  bottom: -70px;
   right: -70px;
   width: 100%;
   height: 180px;
@@ -525,6 +525,7 @@ li:hover {
 }
 
 .skillsPic {
+  filter: brightness(75%);
   height: fit-content;
   width: 100%;
   position: absolute;
@@ -708,7 +709,6 @@ footer > div > span:first-child {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  padding: var(--deep-dive-padding);
   box-sizing: border-box;
   inset-inline-end: 0;
   transform: translateX(100%);
@@ -723,15 +723,36 @@ footer > div > span:first-child {
 }
 
 .panelShow {
-  height: 100vh;
+  height: calc(100% - 180px);
   margin-top: 97px;
   width: 100vw;
   overflow: auto;
+  overflow-y: hidden;
   white-space: nowrap;
+  transform: translateX(0);
+  pointer-events: auto;
+  position: sticky;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.panelShow::-webkit-scrollbar {
+  display: none;
 }
 
 .panelShow > div {
+  overflow-y: hidden;
+  width: 1047px;
+  height: 100%;
+  margin-left: 100px;
   display: inline-block;
+  /* background-color: #0071e3; */
+  position: relative;
+  overflow: hidden;
+}
+
+.panelShow > div:last-child {
+  width: 100px;
 }
 
 .cancle {
@@ -746,7 +767,6 @@ footer > div > span:first-child {
   margin: 0 auto;
   pointer-events: auto;
   height: 40px;
-  /* background-color: #0071e3; */
   width: 980px;
 }
 
@@ -762,13 +782,11 @@ footer > div > span:first-child {
 }
 
 .progress {
-  /* display: block; */
   position: absolute;
   left: 0;
   margin-left: 0px;
   width: 912px;
   height: 2px;
-  /* margin: auto; */
 }
 
 .progress-bar {
@@ -799,9 +817,209 @@ footer > div > span:first-child {
   overflow-y: hidden;
 }
 
-.temp {
-  width: 500px;
+/* travel part */
+.headline {
+  width: 100%;
+  color: #cecece;
+  position: relative;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.introTitle {
+  line-height: 1.2;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.introPeoPle {
+  margin-top: 12px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.travelIntro {
+  position: absolute;
+  left: -85px;
+  bottom: -45px;
+  width: 80%;
+  height: 480px;
+  background-size: 80% 480px;
+  background-repeat: no-repeat;
+  background-image: url(./images/travel/Cover_travel.png);
+}
+
+.introSubTitle-travel {
+  right: 0;
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.part2SubTitle-top {
+  right: 0;
+  top: 30%;
+}
+
+.part2SubTitle-bottom {
+  text-align: right;
+  right: 0;
+  top: 60%;
+}
+
+.date {
+  display: inline-block;
+  /* padding-top: 20px; */
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.explanation {
+  line-height: 1.3;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.012em;
+  color: #86868b;
+}
+
+.explanation > strong {
+  color: #cecece;
+}
+
+.travelIntro::after {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: -1px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.travePart1 {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 80%;
+  height: 360px;
+  background-size: 80% 360px;
+  background-repeat: no-repeat;
+  background-image: url(./images/travel/part1.png);
+}
+
+.travelPart2 {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 70%;
   height: 500px;
-  background-color: #0071e3;
-  margin: 50px;
+  background-size: 70% 500px;
+  background-repeat: no-repeat;
+  background-image: url(./images/travel/part2.png);
+}
+
+.modalIcon {
+  margin-top: 5px;
+  width: 16px;
+}
+
+/* fm part */
+.FMIntro {
+  filter: brightness(80%);
+  position: absolute;
+  left: 0px;
+  bottom: -80px;
+  width: 84%;
+  height: 610px;
+  background-size: 84% 610px;
+  background-repeat: no-repeat;
+  background-image: url(./images/fm/Cover_fm.png);
+}
+
+.setPosi {
+  top: 50%;
+  text-align: right;
+  transform: translate(0, -50%);
+}
+
+.FMPart1 {
+  filter: brightness(80%);
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  transform: translate(0, -50%);
+  width: 65%;
+  height: 175px;
+  background-size: 65% 175px;
+  background-repeat: no-repeat;
+  background-image: url(./images/fm/part1.png);
+}
+
+.introSubTitle-fm {
+  left: 40%;
+  position: absolute;
+  width: fit-content;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.FMPart2 {
+  /* filter: brightness(80%); */
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 60%;
+  height: 320px;
+  background-size: 60% 320px;
+  background-repeat: no-repeat;
+  background-image: url(./images/fm/part2.png);
+}
+
+.fmSubTitle-top {
+  right: 0;
+  top: 40%;
+}
+
+.fmSubTitle-bottom {
+  right: 105px;
+  top: 60%;
+}
+
+.fmSubTitle-center {
+  left: 13%;
+  top: 60%;
+}
+
+.nongsaro {
+  filter: brightness(80%);
+  position: absolute;
+  left: 36%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.FMPart3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 80px;
+  background-size: 100px 80px;
+  background-repeat: no-repeat;
+  background-image: url(./images/fm/part3.jpg);
 }
