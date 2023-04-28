@@ -1,4 +1,4 @@
-import Modal from "./Modal.js";
+import Modal from "./component/Modal.js";
 
 class App {
   constructor($container) {
