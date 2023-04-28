@@ -9,7 +9,7 @@ class App {
   navEvent() {
     const header = document.getElementsByClassName("move");
 
-    const movement = [0, 1100, 2620, 200000];
+    const movement = [0, 1100, 2270, 200000];
 
     for (let i = 0; i < 4; i++) {
       header[i].addEventListener("click", () => {
