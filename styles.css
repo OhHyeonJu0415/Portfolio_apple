@@ -1023,3 +1023,95 @@ footer > div > span:first-child {
   background-repeat: no-repeat;
   background-image: url(./images/fm/part3.jpg);
 }
+
+/* toy part */
+.toyIntro {
+  position: absolute;
+  left: 0%;
+  top: 35%;
+  transform: translate(0, -50%);
+  width: 70%;
+  height: 220px;
+  background-size: 70% 220px;
+  background-repeat: no-repeat;
+  background-image: url(./images/toy/Cover_toy.png);
+}
+
+.toyHead {
+  width: fit-content;
+  margin-top: 0;
+  position: absolute;
+  top: 60%;
+}
+
+.base {
+  filter: drop-shadow(1px 1px 15px #2d2d2d);
+  position: absolute;
+  /* left: 50%; */
+  top: 40%;
+  /* transform: translate(-50%, -50%); */
+  width: 70%;
+  height: 360px;
+  background-size: 70% 360px;
+  background-repeat: no-repeat;
+  background-image: url(./images/toy/base.png);
+}
+
+.ball {
+  left: 0;
+}
+
+.mbti {
+  left: 50%;
+  transform: translate(0, -50%);
+}
+
+.mbti-text {
+  text-align: center;
+  top: 75%;
+  left: 66%;
+  transform: translate(0, -50%);
+}
+
+.ball-text {
+  text-align: center;
+  top: 75%;
+  left: 18%;
+  transform: translate(0, -50%);
+}
+
+.base > img {
+  /* width: 100px; */
+  left: calc(50% - 104px);
+  top: calc(50% - 6px);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 160px;
+}
+
+.ball {
+  left: 0%;
+  transform: translate(0, -50%);
+}
+
+.codepen {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  padding: 3px 8px;
+  background-color: #cecece;
+  display: flex;
+  margin: auto;
+  margin-right: 0;
+  margin-top: 8px;
+  border-radius: 50px;
+}
+
+.codepen > img {
+  /* position: absolute; */
+  width: 50px;
+  /* height: 10px; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(0, -50%); */
+}
