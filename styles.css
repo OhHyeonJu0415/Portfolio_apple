@@ -564,9 +564,14 @@ footer > div > span:first-child {
 
 .panelShow {
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
   margin-top: 97px;
+  width: 100vw;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.panelShow > div {
+  display: inline-block;
 }
 
 .cancle {
@@ -581,7 +586,8 @@ footer > div > span:first-child {
   margin: 0 auto;
   pointer-events: auto;
   height: 40px;
-  background-color: #0071e3;
+  /* background-color: #0071e3; */
+  width: 980px;
 }
 
 .cancle > button {
@@ -593,6 +599,28 @@ footer > div > span:first-child {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.progress {
+  /* display: block; */
+  position: absolute;
+  left: 0;
+  margin-left: 0px;
+  width: 912px;
+  height: 2px;
+  /* margin: auto; */
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    white,
+    white 1%,
+    rgba(255, 255, 255, 0.4) 1%,
+    rgba(255, 255, 255, 0.4)
+  );
 }
 
 .visib {
@@ -615,4 +643,5 @@ footer > div > span:first-child {
   width: 500px;
   height: 500px;
   background-color: #0071e3;
+  margin: 50px;
 }

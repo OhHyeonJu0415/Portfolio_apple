@@ -1,3 +1,5 @@
+import ProgressBar from "./ProgressBar.js";
+
 class Modal {
   constructor($container) {
     this.$container = $container;
@@ -13,6 +15,7 @@ class Modal {
     modalPanel,
     panelShow
   ) {
+    const progressBar = document.getElementsByClassName("progress-bar");
     for (let i = 0; i < 5; i++) {
       btn[i].addEventListener("click", () => {
         main.classList.add("moveLeft");
@@ -21,6 +24,7 @@ class Modal {
         modalScrim[i].classList.add("visib");
         modalPanel[i].classList.add("modalPanelShow");
         panelShow[i].classList.add("moveRight");
+        new ProgressBar(panelShow[i], progressBar[i]);
       });
     }
   }
@@ -48,6 +52,7 @@ class Modal {
   }
 
   render() {
+    // new ProgressBar(this.$container);
     const btn = document.getElementsByClassName("arrow");
     const modalContainer = document.getElementsByClassName("modalContainer");
     const modalScrim = document.getElementsByClassName("modalScrim");
