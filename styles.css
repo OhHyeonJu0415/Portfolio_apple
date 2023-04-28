@@ -558,7 +558,7 @@ footer > div > span:first-child {
 }
 
 .modalPanelShow {
-  background: #aa9999;
+  background: #000000;
   pointer-events: auto;
   transform: translateX(0);
 }
@@ -567,7 +567,6 @@ footer > div > span:first-child {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  /* transform: translateX(10vw); */
   margin-top: 97px;
 }
 
@@ -584,6 +583,17 @@ footer > div > span:first-child {
   pointer-events: auto;
   height: 40px;
   background-color: #0071e3;
+}
+
+.cancle > button {
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  background: #fff;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .visib {

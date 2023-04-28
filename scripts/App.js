@@ -1,3 +1,5 @@
+import Modal from "./Modal.js";
+
 class App {
   constructor($container) {
     this.$container = $container;
@@ -37,9 +39,33 @@ class App {
     }
   }
 
+  closeEvent() {
+    const modalClose = document.getElementsByClassName("modalClose");
+    const modalContainer = document.getElementsByClassName("modalContainer");
+    const modalScrim = document.getElementsByClassName("modalScrim");
+    const modalPanel = document.getElementsByClassName("modalPanel");
+    const panelShow = document.getElementsByClassName("panelShow");
+    const main = document.getElementsByClassName("main");
+    const body = document.getElementById("container");
+
+    for (let i = 0; i < 5; i++) {
+      modalClose[i].addEventListener("click", () => {
+        setTimeout(() => modalContainer[i].classList.remove("visib"), 1000);
+        setTimeout(() => modalScrim[i].classList.remove("visib"), 1000);
+        setTimeout(() => body.classList.remove("scroll"), 1000);
+
+        modalPanel[i].classList.remove("modalPanelShow");
+        panelShow[i].classList.remove("moveRight");
+        main[0].classList.remove("moveLeft");
+      });
+    }
+  }
+
   render() {
     this.navEvent();
-    this.projectEvent();
+    // this.projectEvent();
+    // this.closeEvent();
+    new Modal(this.$container);
   }
 }
 
