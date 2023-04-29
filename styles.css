@@ -454,7 +454,10 @@ li:hover {
   height: 34px;
   border-radius: 50%;
   bottom: 20px;
-  right: 20px;
+
+  opacity: 0;
+  right: 50px;
+  /* right: 20px; */
   color: black;
   display: flex;
   justify-content: center;
@@ -1326,5 +1329,21 @@ footer > div > span:first-child {
 @keyframes toOpacity1 {
   to {
     opacity: 1;
+  }
+}
+
+.toRightArrow {
+  animation: toRightArrow 1s forwards;
+}
+
+.toRightArrowDelay {
+  animation: toRightArrow 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes toRightArrow {
+  to {
+    opacity: 1;
+    right: 20px;
   }
 }
