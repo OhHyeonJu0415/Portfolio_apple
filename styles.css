@@ -1217,7 +1217,7 @@ footer > div > span:first-child {
 .yoohooGrid {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 5px;
   transform: translate(0, -50%);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1288,12 +1288,15 @@ footer > div > span:first-child {
 }
 
 .toyAni {
-  animation: toUpToy 2s forwards;
+  animation: toUpToy 1.5s forwards;
 }
 
 @keyframes toUpToy {
-  30% {
+  20% {
     opacity: 1;
+  }
+  50% {
+    top: 36px;
   }
   to {
     opacity: 1;
@@ -1309,5 +1312,19 @@ footer > div > span:first-child {
   to {
     opacity: 1;
     bottom: 20px;
+  }
+}
+
+#titleTrans {
+  opacity: 0;
+}
+
+.opacityAni {
+  animation: toOpacity1 1s forwards;
+}
+
+@keyframes toOpacity1 {
+  to {
+    opacity: 1;
   }
 }
