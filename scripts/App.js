@@ -1,4 +1,5 @@
 import Modal from "./component/Modal.js";
+import Scroll from "./component/Scroll.js";
 
 class App {
   constructor($container) {
@@ -21,6 +22,7 @@ class App {
   render() {
     this.navEvent();
     new Modal(this.$container);
+    new Scroll();
   }
 }
 
