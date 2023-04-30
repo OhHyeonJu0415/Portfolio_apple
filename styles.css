@@ -1348,7 +1348,7 @@ footer > div > span:first-child {
   width: fit-content;
   height: fit-content;
   background-color: #d5d5d5;
-  z-index: 99999;
+  z-index: 9998;
   color: black;
   padding: 10px 30px;
   border-radius: 15px;
