@@ -1429,7 +1429,7 @@ footer > div > span:first-child {
 @keyframes comingAni {
   from {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-80px);
   }
   to {
     opacity: 1;
