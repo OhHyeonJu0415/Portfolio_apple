@@ -5,9 +5,11 @@ class Scroll {
   render() {
     const travelObj = document.getElementsByClassName("travel")[0];
     const yoohooObj = document.getElementsByClassName("yoohoo")[0];
+    const comingSoon = document.getElementsByClassName("comingSoon")[0];
     const covers = document.getElementsByClassName("projectCover");
 
     const titles = document.getElementsByClassName("coverTitle");
+    const comingTitle = document.getElementsByClassName("comingSoonTitle")[0];
 
     const arrows = document.getElementsByClassName("arrow");
 
@@ -55,6 +57,11 @@ class Scroll {
         covers[3].classList.add("yoohooAni");
         arrows[3].classList.add("toRightArrow");
         arrows[4].classList.add("toRightArrow");
+      }
+
+      if (H >= comingSoon.offsetTop + 80) {
+        //coming soon 타이틀 애니메이션
+        comingTitle.classList.add("comingAni");
       }
     });
   }
