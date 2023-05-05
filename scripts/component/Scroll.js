@@ -47,6 +47,12 @@ class Scroll {
         titles[4].classList.add("opacityAni");
       }
 
+      if (H >= yoohooObj.offsetTop + 190) {
+        //doling 프로젝트 서브타이틀 애니메이션
+        titles[5].classList.add("dolingAni");
+        titles[6].classList.add("dolingAni2");
+      }
+
       if (H >= yoohooObj.offsetTop + 230) {
         //yoohoo 프로젝트 타이틀 애니메이션
         titles[7].classList.add("opacityAni");

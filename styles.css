@@ -404,14 +404,25 @@ li:hover {
   transform: translate(-16px, 8px);
 }
 
-.fontSize {
+.dolingMainTitle {
   padding: 0;
   font-size: 72px;
+  color: transparent;
+  overflow: hidden;
+  /* background: linear-gradient(#eff1ff, #2b2b2b); */
+  background-size: 0% 100%;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
 }
 
-.fontColor {
-  display: inline-block;
-  position: relative;
+.dolingMainTitle::before {
+  content: attr(data-doling);
+  position: absolute;
+  color: rgb(29, 29, 29);
+  z-index: -1;
 }
 
 .yoohoo {
@@ -1316,6 +1327,24 @@ footer > div > span:first-child {
   to {
     opacity: 1;
     top: 200px;
+  }
+}
+
+.dolingAni {
+  animation: toLightDoling 1s forwards;
+}
+
+.dolingAni2 {
+  animation: toLightDoling 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes toLightDoling {
+  fron {
+    background-size: 0% 100%;
+  }
+  to {
+    background-size: 100% 100%;
   }
 }
 
