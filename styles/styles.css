@@ -1,66 +1,12 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-.notosanskr * {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: "Noto Sans KR";
-  background-color: #161617;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-header {
-  z-index: 9999;
-  position: fixed;
-  width: 100%;
-  padding: 0 auto;
-  height: 96px;
-  border-bottom: 1px solid rgb(75, 75, 75);
-  background-color: black;
-}
-
 nav,
 .headerTitle {
   width: 1000px;
   margin: 0 auto;
 }
 
-nav {
-  height: 44px;
-  display: flex;
-  font-size: 12px;
-  align-items: center;
-  justify-content: space-between;
-  color: rgb(209, 209, 209);
-}
-
 .logo {
   fill: rgb(231, 231, 231);
   cursor: pointer;
-}
-
-li {
-  list-style: none;
-  float: left;
-  cursor: pointer;
-  margin-left: 20px;
-}
-
-ul > li:first-child {
-  margin: 0;
-}
-
-li:hover {
-  color: #fff;
 }
 
 .icon > a > img {
@@ -166,17 +112,6 @@ li:hover {
   bottom: -60px;
   width: 120%;
   animation: moveUp 4s forwards;
-}
-
-@keyframes moveUp {
-  from {
-    opacity: 0;
-    bottom: -200px;
-  }
-  to {
-    opacity: 1;
-    bottom: -60px;
-  }
 }
 
 .aboutBottom {
@@ -683,14 +618,6 @@ li:hover {
   color: #2997ff;
   margin-top: 11px;
   text-decoration: none;
-}
-
-footer {
-  width: 100%;
-  height: fit-content;
-  padding-top: 29px;
-  padding-bottom: 21px;
-  background-color: #161617;
 }
 
 footer > div {
@@ -1299,39 +1226,12 @@ footer > div > span:first-child {
   animation: toUpTravel 1s forwards;
 }
 
-@keyframes toUpTravel {
-  to {
-    opacity: 1;
-    top: 100px;
-  }
-}
-
 .fmAni {
   animation: toUpFM 1s forwards;
 }
 
-@keyframes toUpFM {
-  to {
-    opacity: 1;
-    top: 40px;
-  }
-}
-
 .toyAni {
   animation: toUpToy 1.5s forwards;
-}
-
-@keyframes toUpToy {
-  20% {
-    opacity: 1;
-  }
-  50% {
-    top: 36px;
-  }
-  to {
-    opacity: 1;
-    top: 200px;
-  }
 }
 
 .dolingAni {
@@ -1343,24 +1243,8 @@ footer > div > span:first-child {
   animation-delay: 1s;
 }
 
-@keyframes toLightDoling {
-  fron {
-    background-size: 0% 100%;
-  }
-  to {
-    background-size: 100% 100%;
-  }
-}
-
 .yoohooAni {
   animation: toUpYoohoo 1s forwards;
-}
-
-@keyframes toUpYoohoo {
-  to {
-    opacity: 1;
-    bottom: 20px;
-  }
 }
 
 #titleTrans {
@@ -1371,12 +1255,6 @@ footer > div > span:first-child {
   animation: toOpacity1 1s forwards;
 }
 
-@keyframes toOpacity1 {
-  to {
-    opacity: 1;
-  }
-}
-
 .toRightArrow {
   animation: toRightArrow 1s forwards;
 }
@@ -1384,13 +1262,6 @@ footer > div > span:first-child {
 .toRightArrowDelay {
   animation: toRightArrow 1s forwards;
   animation-delay: 1s;
-}
-
-@keyframes toRightArrow {
-  to {
-    opacity: 1;
-    right: 20px;
-  }
 }
 
 #splendid,
@@ -1416,27 +1287,6 @@ footer > div > span:first-child {
   animation-delay: 1s;
 }
 
-@keyframes alert {
-  from,
-  to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
 .comingAni {
   animation: comingAni 1s forwards;
-}
-
-@keyframes comingAni {
-  from {
-    opacity: 0;
-    transform: translateX(-80px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
