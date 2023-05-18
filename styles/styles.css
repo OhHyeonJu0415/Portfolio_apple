@@ -303,7 +303,7 @@ li:hover {
   height: 550px;
   background-size: 111% 550px;
   background-repeat: no-repeat;
-  background-image: url(./images/travel/Cover_travel.png);
+  background-image: url(../images/travel/Cover_travel.png);
   margin: 0 auto;
 }
 
@@ -317,7 +317,7 @@ li:hover {
   height: 210px;
   background-size: 80% 210px;
   background-repeat: no-repeat;
-  background-image: url(./images/fm/Cover_fm.png);
+  background-image: url(../images/fm/Cover_fm.png);
 }
 
 .toy-cover {
@@ -330,7 +330,7 @@ li:hover {
   height: 180px;
   background-size: 100% 180px;
   background-repeat: no-repeat;
-  background-image: url(./images/toy/Cover_toy.png);
+  background-image: url(../images/toy/Cover_toy.png);
 }
 
 .yoohoo-cover {
@@ -343,7 +343,7 @@ li:hover {
   height: 220px;
   background-size: 82% 220px;
   background-repeat: no-repeat;
-  background-image: url(./images/yoohoo/Cover_yoohoo.png);
+  background-image: url(../images/yoohoo/Cover_yoohoo.png);
 }
 
 .fm {
@@ -591,14 +591,14 @@ li:hover {
   bottom: 90px;
   left: 25%;
   transform: translate(-50%, 0);
-  background-image: url(./images/HTML.png);
+  background-image: url(../images/HTML.png);
 }
 
 .CSSFigure {
   bottom: -20px;
   left: 25%;
   transform: translate(-50%, 0);
-  background-image: url(./images/CSS.png);
+  background-image: url(../images/CSS.png);
 }
 
 .JSFigure {
@@ -606,21 +606,21 @@ li:hover {
   bottom: 120px;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-image: url(./images/마스크\ 그룹\ 1.png);
+  background-image: url(../images/마스크\ 그룹\ 1.png);
 }
 
 .RFigure {
   bottom: 90px;
   left: 75%;
   transform: translate(-50%, 0);
-  background-image: url(./images/React.png);
+  background-image: url(../images/React.png);
 }
 
 .RNFigure {
   bottom: -20px;
   left: 75%;
   transform: translate(-50%, 0);
-  background-image: url(./images/RN.png);
+  background-image: url(../images/RN.png);
 }
 
 .finish {
@@ -886,7 +886,7 @@ footer > div > span:first-child {
   height: 480px;
   background-size: 80% 480px;
   background-repeat: no-repeat;
-  background-image: url(./images/travel/Cover_travel.png);
+  background-image: url(../images/travel/Cover_travel.png);
 }
 
 .introSubTitle-travel {
@@ -951,7 +951,7 @@ footer > div > span:first-child {
   height: 360px;
   background-size: 80% 360px;
   background-repeat: no-repeat;
-  background-image: url(./images/travel/part1.png);
+  background-image: url(../images/travel/part1.png);
 }
 
 .travelPart2 {
@@ -963,7 +963,7 @@ footer > div > span:first-child {
   height: 500px;
   background-size: 70% 500px;
   background-repeat: no-repeat;
-  background-image: url(./images/travel/part2.png);
+  background-image: url(../images/travel/part2.png);
 }
 
 .modalIcon {
@@ -981,7 +981,7 @@ footer > div > span:first-child {
   height: 610px;
   background-size: 84% 610px;
   background-repeat: no-repeat;
-  background-image: url(./images/fm/Cover_fm.png);
+  background-image: url(../images/fm/Cover_fm.png);
 }
 
 .setPosi {
@@ -1000,7 +1000,7 @@ footer > div > span:first-child {
   height: 175px;
   background-size: 65% 175px;
   background-repeat: no-repeat;
-  background-image: url(./images/fm/part1.png);
+  background-image: url(../images/fm/part1.png);
 }
 
 .introSubTitle-fm {
@@ -1020,7 +1020,7 @@ footer > div > span:first-child {
   height: 320px;
   background-size: 60% 320px;
   background-repeat: no-repeat;
-  background-image: url(./images/fm/part2.png);
+  background-image: url(../images/fm/part2.png);
 }
 
 .fmSubTitle-top {
@@ -1059,7 +1059,7 @@ footer > div > span:first-child {
   height: 80px;
   background-size: 100px 80px;
   background-repeat: no-repeat;
-  background-image: url(./images/fm/part3.jpg);
+  background-image: url(../images/fm/part3.jpg);
 }
 
 /* toy part */
@@ -1072,7 +1072,7 @@ footer > div > span:first-child {
   height: 220px;
   background-size: 70% 220px;
   background-repeat: no-repeat;
-  background-image: url(./images/toy/Cover_toy.png);
+  background-image: url(../images/toy/Cover_toy.png);
 }
 
 .toyHead {
@@ -1090,7 +1090,7 @@ footer > div > span:first-child {
   height: 360px;
   background-size: 70% 360px;
   background-repeat: no-repeat;
-  background-image: url(./images/toy/base.png);
+  background-image: url(../images/toy/base.png);
 }
 
 .ball {
@@ -1155,7 +1155,7 @@ footer > div > span:first-child {
   height: 360px;
   background-size: 75% 360px;
   background-repeat: no-repeat;
-  background-image: url(./images/doling/part1.png);
+  background-image: url(../images/doling/part1.png);
 }
 
 .dolingTitle-top {
@@ -1173,7 +1173,7 @@ footer > div > span:first-child {
   height: 370px;
   background-size: 42% 370px;
   background-repeat: no-repeat;
-  background-image: url(./images/doling/part2.png);
+  background-image: url(../images/doling/part2.png);
 }
 
 .DolingPart3 {
@@ -1184,7 +1184,7 @@ footer > div > span:first-child {
   height: 60px;
   background-size: 60px 60px;
   background-repeat: no-repeat;
-  background-image: url(./images/doling/part3.png);
+  background-image: url(../images/doling/part3.png);
 }
 
 .introSubTitle-doling {
@@ -1223,7 +1223,7 @@ footer > div > span:first-child {
   height: 380px;
   background-size: 80% 380px;
   background-repeat: no-repeat;
-  background-image: url(./images/yoohoo/part1.png);
+  background-image: url(../images/yoohoo/part1.png);
 }
 
 .yoohooPart2 {
@@ -1236,7 +1236,7 @@ footer > div > span:first-child {
   height: 520px;
   background-size: 100% 520px;
   background-repeat: no-repeat;
-  background-image: url(./images/yoohoo/part2.png);
+  background-image: url(../images/yoohoo/part2.png);
 }
 
 .gradHide {
